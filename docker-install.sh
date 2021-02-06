@@ -1,6 +1,10 @@
 #!/bin/bash
+
 # Created by Mostafa Hassani
 # Will install Docker in Centos
+
+# Update
+sudo yum update
 
 # Remove old version of Docker
 sudo yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine docker-ce
