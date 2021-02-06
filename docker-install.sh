@@ -27,11 +27,8 @@ sudo systemctl start docker
 # Enable Docker
 sudo systemctl enable docker
 
-# Create a Docker user
-sudo useradd docker
-
-# Add the user docker to the Docker group
-sudo usermod -ag docker docker
+# Create a Docker user and add it to the group Docker
+sudo useradd docker -g docker
 
 # uninstall Docker-compose
 sudo rm /usr/local/bin/docker-compose
