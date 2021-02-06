@@ -31,7 +31,7 @@ sudo systemctl enable docker
 sudo useradd docker -g docker
 
 # uninstall Docker-compose
-sudo rm -y /usr/local/bin/docker-compose
+sudo rm /usr/local/bin/docker-compose
 
 # Download Docker-Compose (update the release if needed)
 sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
