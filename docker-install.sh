@@ -3,13 +3,13 @@
 # Will install Docker in Centos
 
 # Remove old version of Docker
-sudo yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine
+sudo yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine docker-ce
 
 # Install yum-utils package to set up the repository
 sudo yum install -y yum-utils
 
 # Set up the stable repository
-sudo yum-config-mmanager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
 # Install latest Docker Engine
 sudo yum install docker-ce docker-ce-cli containerd.io
