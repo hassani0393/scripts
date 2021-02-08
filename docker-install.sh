@@ -38,10 +38,4 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-
 
 # Set the permision of the binary file to executeble
 sudo chmod +x /usr/local/bin/docker-compose
-.
-.
-.
-.
-.
-.
-Done
+
